@@ -1,0 +1,37 @@
+# Calcula las soluciones de la ecuación de segundo grado
+#Importar libreria math
+import math
+
+# Damos los valores de a, b y c al programa
+
+a = float(input("\n Introduce el valor de a: "))
+b = float(input("\n Introduce el valor de b: "))
+c = float(input("\n Introduce el valor de c: "))
+
+# Cálculos
+
+if(a==0):
+	print("\n La ecuación no es de segundo grado.")
+
+	if(b==0):
+		print("Si b es 0, no es una ecuación.")
+
+	else:
+		s = -c/b
+
+		print("\n La solución es: ", s)
+
+else:
+
+	discriminante = b*b - 4*a*c
+
+	if(discriminante<0):
+		print("\n La ecuación no tiene solución.")
+
+	else:
+		s1 =  (-b + math.sqrt(discriminante))/(2*a)
+		s2 =  (-b - math.sqrt(discriminante))/(2*a)
+
+		print("\n Las soluciones son: ", s1, s2)
+		
+print("\n Fin del programa")

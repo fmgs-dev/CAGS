@@ -1,0 +1,15 @@
+#Grafica que muestra en el eje "x" un numero y en el eje "y" su cuadrado
+
+#Importar libreria
+import matplotlib.pyplot as plt
+
+#Coordenadas (x,y)
+X = [2, 3, 4, 5]
+Y = [4, 9, 16, 25]
+
+
+#Coordenadas (x,y) y leyenda en (x,y)
+plt.plot(X,Y,"ro")
+plt.ylabel('Su cuadrado')
+plt.xlabel("Número")
+plt.show()

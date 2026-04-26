@@ -1,0 +1,9 @@
+#calcula la suma de los números del 1 al 100 y muestra cómo crece la suma 
+
+
+s = 0
+
+for i in range(1, 101):
+	
+	s = s + i
+	print("Actual:", i, s)

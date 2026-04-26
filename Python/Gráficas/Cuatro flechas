@@ -1,0 +1,28 @@
+#Gráfica que muestra 4 flechas 
+
+
+# Importar libreria
+import matplotlib.pyplot as plt
+
+
+#Característica de la flecha
+Ancho_de_punta = 0.6
+
+
+#Flecha I
+plt.arrow(2,2,4,4, length_includes_head = True, head_width = Ancho_de_punta)
+
+#Flecha II
+plt.arrow(-2,2,-4,4, length_includes_head = True, head_width = Ancho_de_punta)
+
+#Flecha III
+plt.arrow(-2,-2,-4,-4, length_includes_head = True, head_width = Ancho_de_punta)
+
+#Flecha IV
+plt.arrow(2,-2,4,-4, length_includes_head = True, head_width = Ancho_de_punta)
+
+
+#Características de la gráfica
+plt.axis('Square')
+plt.axis([-8,8,-8,8])
+plt.show()

@@ -1,0 +1,13 @@
+#Programa que solicita un numero al usuario hastq que este introduzca el numero 0 para salir del programa
+
+
+#Incializa variable con un valor que hace que el programa entre en el bucle While
+Numero = 1
+
+#Inicio del bucle
+while(Numero != 0):
+	Numero = int(input("\nIntroduce un número: "))
+	print("El número que has escrito es: ", Numero)
+	
+
+print("\nFin del programa")

@@ -1,0 +1,22 @@
+#Programa que indica entre que rango está un número o si es mayor a 1000
+
+
+a = int(input("Introduce un número: "))
+
+if(a<0):
+	print("El número es negativo!!")
+	
+elif(0<a<=10):
+	print("El número está entre 1 y 10")
+	
+elif(10<a<=100):
+	print("El número está entre 11 y 100")
+	
+elif(100<a<=1000):
+	print("El número está entre 101 y 1000")
+	
+else:
+	print("El número es mayor que 1000")	
+
+
+print("\nFin del programa")

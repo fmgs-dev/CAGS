@@ -1,0 +1,47 @@
+#Gráfica de altura frente a tiempo de un cuerpo lanzado hacia arriba
+#Función que calcula la altura en función del tiempo y la velocidad inicial
+#Valores del tiempo se calculan mediante "arange" de numpy
+#Las alturas las calcula el programa llamando a la función
+
+#Importar librerias
+import matplotlib.pyplot as plt
+import numpy as np
+
+#Definición de la función
+
+def Altura(vi, t):
+
+	a = vi*t-5*t**2
+
+	if(a<0):
+		a = 0
+
+	return a
+
+#Fin de definición de la función
+
+#Determinar la velocidad inicial
+vi = float(input("Introduce la velocidad inicial del objeto: "))
+
+
+#Coordenadas (x,y)
+
+#Limite de tiempo (altura 0)
+t_max = vi / 9.81 * 2
+
+#Generamos los tiempos
+ListaDeTiempos = np.arange(0,t_max,0.1)
+
+
+
+#Calculamos las alturas llamando a la función
+h = [Altura(vi, t) for t in ListaDeTiempos]
+
+
+#Gráfica
+plt.plot(ListaDeTiempos, h, 'ro')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Altura (m)')
+plt.title('MRUA')
+
+plt.show()

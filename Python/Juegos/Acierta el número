@@ -1,0 +1,33 @@
+#Programa que genera un numero aleatorio entre 1 y 100 y debes adivinarle. 
+#Si el numero no es correcto te indica si es mayor o menor.
+
+#Importar libreria random de python
+import random
+
+
+
+#Generación del numero aleatorio
+Objetivo = random.randrange(1,100)
+
+
+
+
+Continuar = True
+
+while(Continuar):
+	Numero = int(input("Introduce un número: "))
+
+	if(Numero == Objetivo):
+		print("Enhorabuena, has acertado el número")
+		
+		#Cambiamos variable que controla el final del programa
+		Continuar = False
+	
+	elif(Numero > Objetivo):
+		print("Mayor")
+	
+	else:
+		print("Menor")
+		
+print()
+print("Fin del juego")

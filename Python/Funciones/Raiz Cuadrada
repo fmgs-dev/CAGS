@@ -1,0 +1,24 @@
+#Programa que calcula la raíz cuadrada solo cuando el número es positivo
+
+
+#Importar libreria
+from math import sqrt
+
+#Inicio de la definición de la función
+def Raiz(x):
+
+	if(x<0):
+		print("No se puede hacer la raz cuadrada de", x)
+	else:
+		resultado = sqrt(x)
+		print("La raiz cuadrada de", x, "es", resultado)
+
+# Fin de la definición de la función
+
+#Programa
+
+#Pide un número
+Numero = float(input("Introduce un número: "))
+
+#Llama a la función Raiz con ese número
+Raiz(Numero)

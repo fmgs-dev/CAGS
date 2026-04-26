@@ -1,0 +1,45 @@
+#Programa que calcula el máximo, mínimo y media de una lista.
+#La versión no tiene las ordenes print para ver el código con más claridad
+
+
+#Inicio de la función
+
+def Estadistica(Lista):
+	
+	
+	Menor = Lista[0]
+	Mayor = Lista[0]
+	Suma  = 0
+	NumeroElementos = 0
+
+	#Inicio del bucle - for
+	for x in Lista:
+		
+		Suma = Suma + x
+		NumeroElementos = NumeroElementos + 1
+
+		if(x > Mayor):
+			Mayor = x
+			
+		if(x < Menor):
+			Menor = x
+	#Fin del bucle - for
+	
+	Media = Suma/NumeroElementos
+
+	return [Mayor, Menor, Media]
+
+#Fin de la función
+
+
+
+#*******************************************
+
+A = [5, 2, 9, 6, 10, 1, 4]
+
+Resultado = Estadistica(A)
+
+print("En la lista:", A)
+print("Mayor:", Resultado[0])
+print("Menor:", Resultado[1])
+print("Media:", Resultado[2])

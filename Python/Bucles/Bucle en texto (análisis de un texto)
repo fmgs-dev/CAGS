@@ -1,0 +1,62 @@
+#Define una variable que contiene una cadena de texto.
+Texto = input("Introduce el texto que deseas analizar: ")
+
+#Define vocales y consonantes
+Vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ"
+Consonantes = "bcdfghjklmnñpqrstvwxyzBCDFGHJKLMNÑPQRSTVWXYZ"
+
+#Introduce una línea de separación en la salida en pantalla.
+print()
+
+#Cuenta el número de letras en el texto.
+Numero = 0
+for c in Texto:
+	if (c in Vocales):
+		Numero = Numero + 1
+	if (c in Consonantes):
+		Numero = Numero + 1
+
+print("El texto tiene ", Numero, " letras.")
+       
+       
+#Introduce una línea de separación en la salida en pantalla.
+print() 
+
+
+#Cuenta el número de caractéres en el texto.
+Caracteres = 0
+for c in Texto:
+	Caracteres = Caracteres + 1
+
+print("El texto tiene longitud de ", Caracteres, " caractéres.")
+	
+
+#Introduce un salto
+print()
+
+
+#Analiza el texto y muestra cuantas vocales y consonantes tiene.
+NumeroVocal = 0
+NumeroConsonante = 0 
+
+for c in Texto:
+
+    if (c in Vocales):
+        NumeroVocal = NumeroVocal + 1
+    elif (c in Consonantes):
+        NumeroConsonante = NumeroConsonante + 1    
+
+print("El texto tiene", NumeroVocal, "vocales y", NumeroConsonante, "consonantes.")
+
+
+#Introduce un salto
+print()
+
+
+#Cuenta cuántas veces aparece la letra "o" en el texto.
+Veces = 0
+for c in Texto:
+	if (c=="o"):
+		Veces = Veces + 1
+
+print("El número de veces que aparece la letra 'o' es:", Veces)

@@ -1,0 +1,10 @@
+#Programa para comprobar si un número es mayor o menosr que 10
+
+a = int(input("Introduce un número: "))
+
+if(a<10):
+	print("\n", a, "es menor que 10")
+else:
+	print("\n", a, "es mayor que 10")
+
+print("\nFin del programa")

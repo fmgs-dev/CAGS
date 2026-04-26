@@ -1,0 +1,21 @@
+# Programa que indica si un número es primo.
+
+
+n = int(input("Introduce un número: "))
+
+
+for d in range(2,n):
+
+	print()
+	print("Divisor:", d)
+	Resto = n%d
+	print("Resto: ", Resto)
+	
+	if (Resto==0):
+		print()
+		print(n, "no es primo.")
+		break
+
+
+print()
+print("Fin del programa.")

@@ -1,0 +1,40 @@
+#Calcula campo gravitatorio creado por una masa en el origen de coordenadas.
+#Las coordenadas del punto donde se quiere calcular el campo vienen dadas dentro del programa.
+
+
+#Importar libreria
+from math import sqrt
+
+
+#Inicio de la función campo gravitatorio
+ 
+def Campo(M, x, y):
+
+	G = 6.67E-11
+
+	d2 = x**2+y**2
+
+	ModuloCampo = G*M/d2
+
+	ModuloVector = sqrt(d2)
+
+	CompXCampo = -ModuloCampo * x / ModuloVector
+	CompYCampo = -ModuloCampo * y / ModuloVector
+
+	return [CompXCampo, CompYCampo]
+
+#Fin de la función campo gravitatorio
+
+
+#Llamamos a la función en un caso
+
+#Masa de la tierra
+M = 5.972E24
+#Centro de la tierra sobre el eje x
+xc = 0
+#Radio de la tierra en metros (superficie)
+yc = 6371000
+
+Caso = Campo(M, xc, yc)
+
+print("Campo:", Caso)

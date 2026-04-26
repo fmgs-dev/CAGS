@@ -1,0 +1,27 @@
+#Programa que calcula el factorial de un número dado por el usuario
+
+
+#Inicio de la definición de la función
+def Factorial(n):
+
+	#Define una variable para el producto y le da valor 1
+	P = 1
+
+	#Bucle que realiza las multiplicaciones
+	for i in range(1,n+1):
+		P = P * i
+
+	#Devuelve el resultado en P
+	return P
+#Fin de la definición de la función
+
+#Inicio del programa
+
+#Pide un número
+Numero = int(input("Introduce un número: "))
+
+#Llama a la función y guarda el resultado
+Resultado = Factorial(Numero)
+
+#Muestra el resultado
+print("El factorial de", Numero, "es", Resultado)

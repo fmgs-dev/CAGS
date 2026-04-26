@@ -1,0 +1,9 @@
+#Importar libreria
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+#Coordenadas y muestra en pantalla
+
+plt.plot([1, 4, 9, 16])
+plt.show()

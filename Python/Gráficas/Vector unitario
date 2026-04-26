@@ -1,0 +1,28 @@
+#Calcula y ibuja un vector unitario apuntando al origen de coordenadas(marcado con un punto negro).
+#Programa que pide la posición (X,Y) del punto donde se quiere dibujar el vector unitario.
+
+
+#Importar librerias
+import matplotlib.pyplot as plt
+from math import sqrt
+
+#Caracteristicas de la flecha
+Ancho_de_punta = 0.2
+
+#Coordenadas del punto
+x = float(input("Coordenada x:"))
+y = float(input("Coordenada y:"))
+
+#Cálculo del vector unitario
+longitud_cuadrado = x**2 + y**2
+longitud = sqrt(longitud_cuadrado)
+
+
+#Flecha
+plt.arrow(x,y,-x/longitud,-y/longitud, length_includes_head = True, head_width = Ancho_de_punta)
+
+#Caracteristicas de la gráfica con punto rojo en origen de coordenadas
+plt.plot(0, 0, 'ko')
+plt.axis('Square')
+plt.axis([-10,10,-10,10])
+plt.show()

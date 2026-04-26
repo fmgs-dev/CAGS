@@ -1,0 +1,35 @@
+#Función que dice si un número es (o no) primo en un rango seleccionado.
+
+def EsPrimo(n):
+
+	Resultado = "es primo"
+
+	for d in range(2,n):
+
+		Resto = n%d
+		
+		if (Resto==0):
+			Resultado = "no es primo"
+			break
+
+	return Resultado
+
+#Fin de la función
+
+#Comienza el programa
+
+n1 = int(input("Introduce el número en el que comenzar: "))
+n2 = int(input("Introduce el número en el que acabar: "))
+
+Encontrados = 0
+
+for n in range(n1, n2+1):
+
+	Conclusion = EsPrimo(n)
+	if(Conclusion == "es primo"):
+		Encontrados = Encontrados + 1
+		print("El número", n, Conclusion)
+
+
+print()
+print("Entre", n1,"y",n2,"hay", Encontrados, "números primos.")

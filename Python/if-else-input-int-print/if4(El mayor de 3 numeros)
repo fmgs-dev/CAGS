@@ -1,0 +1,28 @@
+#Programa que indica el mayor de tres numeros
+
+print("Introduce tres números")
+
+a = int(input("Primero: "))
+b = int(input("Segundo: "))
+c = int(input("Tercero: "))
+
+Mayor = a
+Cambio = 0
+
+if(b > Mayor):
+	print("Cambio primero por segundo")
+	Mayor = b
+	Cambio = 1
+
+if(c > Mayor):
+	Mayor = c
+	if(Cambio == 1):
+		print("Cambio segundo por tercero")
+	else:
+		print("Cambio primero por tercero")
+	
+
+print("El mayor es:", Mayor)
+
+
+print("\n Fin del programa")

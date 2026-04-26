@@ -1,0 +1,25 @@
+#Función que dice si un número es (o no) primo.
+
+def EsPrimo(n):
+
+	Resultado = "es primo"
+
+	for d in range(2,n):
+
+		Resto = n%d
+		
+		if (Resto==0):
+			Resultado = "no es primo"
+			break
+
+	return Resultado
+
+#Fin de la función
+
+
+#Comienza el programa
+
+n = int(input("Introduce un número: "))
+Conclusion = EsPrimo(n)
+
+print("El número", n, Conclusion)

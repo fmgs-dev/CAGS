@@ -1,0 +1,23 @@
+#Programa que indica si un dia es entre semana o fin de semana
+
+#Listas de categorias y dias de la semana
+Diario = ["l", "m", "x", "j", "v", "lunes", "martes", "miercoles", "jueves", "viernes", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+FinSemana = ["s", "d", "sabado", "domingo", "Sabado", "Domingo"]
+#Fin de listas
+
+
+dia = input("Introduce un día de la semana: ")
+
+
+if(dia in Diario):
+	print("\n", dia, "es un día entre semana")
+	
+elif(dia in FinSemana):
+	print("\n", dia, "es un día del fin de semana")
+	
+else:
+	print("No has introducido correctamente el día")
+	
+
+
+print("\nFin del programa")
