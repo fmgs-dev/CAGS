@@ -10,7 +10,7 @@
 
 ⦿ Trabajos realizados en clase de programación (CAGS):
 
- ![alt text](images/image-logo-python.png) **Python:**
+**Python:**
     
     ► Bucles
     ► Gráficas
